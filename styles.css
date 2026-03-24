@@ -215,6 +215,7 @@ a:hover {
     position: relative;
     z-index: 1;
     max-width: 900px;
+    padding-bottom: 84px;
 }
 
 .hero-badge {
@@ -330,7 +331,7 @@ a:hover {
     justify-content: center;
     gap: var(--space-md);
     flex-wrap: wrap;
-    transform: translateY(-22px);
+    transform: translateY(-10px);
 }
 
 .btn {
@@ -370,7 +371,7 @@ a:hover {
 
 .hero-scroll {
     position: absolute;
-    bottom: var(--space-2xl);
+    bottom: var(--space-lg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1197,6 +1198,7 @@ a:hover {
 
     .hero-cta {
         flex-direction: column;
+        transform: translateY(-6px);
     }
 
     .key-stats {
@@ -1234,6 +1236,10 @@ a:hover {
     .award-badge {
         font-size: 0.75rem;
         padding: 0.4rem 0.75rem;
+    }
+
+    .hero-content {
+        padding-bottom: 92px;
     }
 
     .key-stats {
