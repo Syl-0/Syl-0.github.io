@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laughing Through the Struggles | CHI '26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">Laughing Through the Struggles</span>
+            </a>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#methods">Methods</a>
+                <a href="#findings">Findings</a>
+                <a href="#discussion">Discussion</a>
+                <a href="#implications">Implications</a>
+            </div>
+            <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-conference">CHI '26</span>
+                <span class="badge-date">April 13-17, 2026 | Barcelona, Spain</span>
+            </div>
+            <div class="hero-title-row">
+                <h1 class="hero-title">Laughing Through the Struggles</h1>
+                <span class="award-badge" aria-label="This paper received an Honorable Mention">HONORABLE MENTION</span>
+            </div>
+            <p class="hero-subtitle">Understanding ADHD Experience and Community Engagement Through Memes and Comments on Instagram</p>
+            <div class="hero-authors">
+                <div class="author">
+                    <span class="author-name">Fan Zhang</span>
+                    <span class="author-affiliation">Independent Researcher</span>
+                </div>
+                <div class="author">
+                    <span class="author-name">Jiaying Fu</span>
+                    <span class="author-affiliation">Beijing Normal University</span>
+                </div>
+                <div class="author">
+                    <span class="author-name">Kexin Chen</span>
+                    <span class="author-affiliation">University of Pennsylvania</span>
+                </div>
+                <div class="author">
+                    <span class="author-name">RAY LC</span>
+                    <span class="author-affiliation">City University of Hong Kong</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#overview" class="btn btn-primary">Explore Research</a>
+                <a href="https://doi.org/10.1145/3772318.3790540" class="btn btn-secondary" target="_blank">DOI: 10.1145/3772318.3790540</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">Research Summary</h2>
+            </div>
+
+            <div class="abstract-card">
+                <h3>Abstract</h3>
+                <p>While public discourse often reduces Attention-Deficit Hyperactivity Disorder (ADHD) to stereotypes that overlook the invisible struggles of those who live with it, ADHD people are increasingly using social media to express their experiences on their own terms. On platforms like Instagram, memes have become a powerful and accessible medium for expressing everyday challenges through humor and relatability.</p>
+                <p>This study analyzed <strong>350 ADHD-related memes</strong> and over <strong>28,000 associated comments</strong> to explore how ADHD was expressed and engaged with in online spaces, and consulted a neurodevelopmental science and clinical researcher. Findings show that memes depict behavioral inconsistencies, internal conflicts, and societal pressures, while comments reveal strong resonance, personal identification, and peer support, including informal self-diagnosis and shared experiences.</p>
+            </div>
+
+            <div class="research-questions">
+                <h3>Research Questions</h3>
+                <div class="rq-grid">
+                    <div class="rq-card">
+                        <span class="rq-number">RQ1</span>
+                        <p>What lived experiences of ADHD are communicated through ADHD memes?</p>
+                    </div>
+                    <div class="rq-card">
+                        <span class="rq-number">RQ2</span>
+                        <p>How do ADHD memes employ narrative and rhetorical forms to engage users?</p>
+                    </div>
+                    <div class="rq-card">
+                        <span class="rq-number">RQ3</span>
+                        <p>How do users engage with ADHD memes on Instagram?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="350">0</span>
+                    <span class="stat-label">ADHD Memes Analyzed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="28118">0</span>
+                    <span class="stat-label">Comments Collected</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="28">0</span>
+                    <span class="stat-label">Topics Identified</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="21">0</span>
+                    <span class="stat-label">Narrative Forms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+    <section class="section section-alt" id="methods">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Methods</span>
+                <h2 class="section-title">Research Methodology</h2>
+            </div>
+
+            <div class="methods-overview">
+                <p>This study employed a multi-step methodology to analyze ADHD-related memes and comments, combining qualitative content analysis with computational methods.</p>
+            </div>
+
+            <div class="methods-flow">
+                <div class="method-step">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Data Collection</h4>
+                        <p>Collected memes from Instagram using #adhdmemes hashtag. Identified 14 public accounts dedicated to ADHD-related content.</p>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Qualitative Analysis</h4>
+                        <p>Coded memes for content, form, and emotion using Krippendorff's Alpha for inter-rater reliability (0.841, 0.800, 0.618).</p>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Computational Analysis</h4>
+                        <p>Emotion classification using DistilRoBERTa model. BERTopic modeling for thematic patterns (coherence: 0.86, diversity: 0.63).</p>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Expert Consultation</h4>
+                        <p>Consulted neurodevelopmental science and clinical researcher for contextual insights and validation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Findings Section -->
+    <section class="section" id="findings">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Findings</span>
+                <h2 class="section-title">Key Research Findings</h2>
+            </div>
+
+            <!-- RQ1 Findings -->
+            <div class="finding-section" id="rq1-findings">
+                <div class="finding-header" onclick="toggleSection('rq1-content')">
+                    <div class="finding-number">RQ1</div>
+                    <h3>Lived Experiences of ADHD</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="finding-content" id="rq1-content">
+                    <p class="finding-intro">Our meme analysis revealed lived experiences of ADHD marked by inconsistent behaviors, internal conflicts, and the ways ADHD people navigate their everyday lives with invisible labor and societal challenges.</p>
+
+                    <div class="theme-accordion">
+                        <!-- Theme 1: Inconsistent Behaviors -->
+                        <div class="theme-item">
+                            <div class="theme-header" onclick="toggleTheme('theme1')">
+                                <h4>Living the Variability: Inconsistencies in ADHD Behaviors</h4>
+                                <span class="theme-toggle">+</span>
+                            </div>
+                            <div class="theme-content" id="theme1">
+                                <div class="subthemes-grid">
+                                    <div class="subtheme-card">
+                                        <h5>Unpredictable Stimulation Effects</h5>
+                                        <p>Memes portrayed ADHD people as constantly seeking stimulation to maintain dopamine levels, yet effects varied widely, bringing clarity, calm, or sudden sleepiness.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/stimulation.pdf')">
+                                            <span>View Figure: Stimulation Effects</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Forgetful and Hyper-Memorable</h5>
+                                        <p>Memory in ADHD was portrayed as unpredictable and selective, with frequent lapses in everyday tasks alongside vivid recall of emotional details.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/memory_and_self_presentation.pdf')">
+                                            <span>View Figure: Memory & Self-Presentation</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Interest-driven Productivity</h5>
+                                        <p>Wide variation in focus and output depending on personal interest and task urgency. High-quality results through hyperfocus contrasted with struggles in routine tasks.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/productivity_ideation_compassion.pdf')">
+                                            <span>View Figure: Productivity Patterns</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Creative Ideation vs. Execution Gap</h5>
+                                        <p>The gap between generating ideas and taking action. Memes described experiences like "having the best idea and then nothing."</p>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Compassion Discrepancies</h5>
+                                        <p>ADHD people shown as empathetic toward others yet self-critical, supporting others with demanding tasks while avoiding their own.</p>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Self-Presentation Challenges</h5>
+                                        <p>The tendency to appear outwardly fine while experiencing invisible struggles, downplaying difficulties to avoid showing vulnerability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Theme 2: Internal Conflicts -->
+                        <div class="theme-item">
+                            <div class="theme-header" onclick="toggleTheme('theme2')">
+                                <h4>Living in Mental Dissonance: Internal Conflicts</h4>
+                                <span class="theme-toggle">+</span>
+                            </div>
+                            <div class="theme-content" id="theme2">
+                                <div class="subthemes-grid">
+                                    <div class="subtheme-card">
+                                        <h5>Self-Awareness in Paralysis</h5>
+                                        <p>Deep and often painful self-awareness: being fully aware of what needs to be done yet unable to initiate or complete the task.</p>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Conflict between Structure and Autonomy</h5>
+                                        <p>A contradictory relationship with structure: resisting imposed structure while acknowledging external systems as helpful or necessary.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/Conflict_between_Structure_and_Autonomy.pdf')">
+                                            <span>View Figure: Structure vs. Autonomy</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Ambivalence in Social Desires</h5>
+                                        <p>Duality between desire for connection and simultaneous experience of social exhaustion, affecting relationships and social interactions.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/Ambivalence_in_Social_Desires.pdf')">
+                                            <span>View Figure: Social Desires</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Theme 3: Personal Struggles and Societal Pressures -->
+                        <div class="theme-item">
+                            <div class="theme-header" onclick="toggleTheme('theme3')">
+                                <h4>Navigating ADHD: Personal Struggles and Societal Pressures</h4>
+                                <span class="theme-toggle">+</span>
+                            </div>
+                            <div class="theme-content" id="theme3">
+                                <div class="subthemes-grid">
+                                    <div class="subtheme-card">
+                                        <h5>Emotional Burden</h5>
+                                        <p>17 distinct emotional expressions identified. Top five: frustrated, sad, ambivalent, angry, and anxious.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/emotion.pdf')">
+                                            <span>View Figure: Emotion Examples</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Functioning with Invisible Labor</h5>
+                                        <p>Substantial effort invested in completing everyday tasks. Customized coping systems and strategies depicted as exhausting or only partially effective.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/Functioning.pdf')">
+                                            <span>View Figure: Functioning with Invisible Labor</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Challenges in Diagnosis and Treatment</h5>
+                                        <p>Path to formal diagnosis depicted as complicated, delayed, or emotionally draining. Mixed experiences with treatment and systemic barriers.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/diagnosis_and_treatment.pdf')">
+                                            <span>View Figure: Diagnosis Challenges</span>
+                                        </div>
+                                    </div>
+                                    <div class="subtheme-card">
+                                        <h5>Trivialization and Stigma</h5>
+                                        <p>Behaviors often moralized or stigmatized. Overgeneralization and misinformation complicating public perceptions.</p>
+                                        <div class="figure-reference" onclick="openModal('assets/Trivialization_and_stigma.pdf')">
+                                            <span>View Figure: Trivialization & Stigma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RQ2 Findings -->
+            <div class="finding-section" id="rq2-findings">
+                <div class="finding-header" onclick="toggleSection('rq2-content')">
+                    <div class="finding-number">RQ2</div>
+                    <h3>Narrative and Rhetorical Forms</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="finding-content" id="rq2-content">
+                    <p class="finding-intro">Analysis identified 21 distinct narrative and rhetorical forms across ADHD memes, categorized into six groups reflecting how memes creatively employ various forms of expression.</p>
+
+                    <div class="forms-grid">
+                        <div class="form-card">
+                            <div class="form-icon">🎭</div>
+                            <h4>Subversive & Reflexive Humor</h4>
+                            <p><strong>Self-deprecation (154)</strong> and <strong>satire (30)</strong> as coping mechanisms and critique of societal norms.</p>
+                            <div class="figure-reference" onclick="openModal('assets/form01.png')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                        <div class="form-card">
+                            <div class="form-icon">📝</div>
+                            <h4>Narrative Positioning</h4>
+                            <p><strong>First-person perspective (77)</strong>, seeking resonance (13), appeal (2), self-clarification (2).</p>
+                            <div class="figure-reference" onclick="openModal('assets/form02.png')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                        <div class="form-card">
+                            <div class="form-icon">🎬</div>
+                            <h4>Cultural Reference</h4>
+                            <p><strong>Pop culture references (109)</strong>, celebrities (6), religion (5), trending topics (2).</p>
+                            <div class="figure-reference" onclick="openModal('assets/Cultural_Reference_and_Symbolism.pdf')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                        <div class="form-card">
+                            <div class="form-icon">💡</div>
+                            <h4>Rhetorical Techniques</h4>
+                            <p><strong>Metaphor (61)</strong>, exaggeration (37), wordplay (6), unexpected twist (4).</p>
+                            <div class="figure-reference" onclick="openModal('assets/Rhetorical_Techniques.pdf')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                        <div class="form-card">
+                            <div class="form-icon">⚖️</div>
+                            <h4>Comparison</h4>
+                            <p>Different situations (25), with non-ADHD (17), other conditions (8), ADHD characteristics (7).</p>
+                            <div class="figure-reference" onclick="openModal('assets/Comparison.pdf')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                        <div class="form-card">
+                            <div class="form-icon">💬</div>
+                            <h4>Dialogic Construction</h4>
+                            <p>Self-talk (11), dialogue between ADHD individuals (7), with therapist (7).</p>
+                            <div class="figure-reference" onclick="openModal('assets/form06.png')">
+                                <span>View Examples</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RQ3 Findings -->
+            <div class="finding-section" id="rq3-findings">
+                <div class="finding-header" onclick="toggleSection('rq3-content')">
+                    <div class="finding-number">RQ3</div>
+                    <h3>Community Engagement</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="finding-content" id="rq3-content">
+                    <p class="finding-intro">Analysis of 28,118 comments revealed how users engage with ADHD memes through emotional responses and thematic patterns.</p>
+
+                    <div class="emotion-section">
+                        <h4>Emotion Classification Results</h4>
+                        <div class="emotion-chart">
+                            <div class="emotion-bar">
+                                <div class="bar-label">Neutral</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 62.87%" data-value="62.87%"></div>
+                                </div>
+                                <div class="bar-value">62.87%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Surprise</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill positive" style="width: 10.77%" data-value="10.77%"></div>
+                                </div>
+                                <div class="bar-value">10.77%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Anger</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill negative" style="width: 6.72%" data-value="6.72%"></div>
+                                </div>
+                                <div class="bar-value">6.72%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Sadness</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill negative" style="width: 6.15%" data-value="6.15%"></div>
+                                </div>
+                                <div class="bar-value">6.15%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Joy</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill positive" style="width: 5.65%" data-value="5.65%"></div>
+                                </div>
+                                <div class="bar-value">5.65%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Disgust</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill negative" style="width: 4.78%" data-value="4.78%"></div>
+                                </div>
+                                <div class="bar-value">4.78%</div>
+                            </div>
+                            <div class="emotion-bar">
+                                <div class="bar-label">Fear</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill negative" style="width: 3.07%" data-value="3.07%"></div>
+                                </div>
+                                <div class="bar-value">3.07%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topics-section">
+                        <h4>Five Major Comment Themes</h4>
+                        <div class="topics-grid">
+                            <div class="topic-card">
+                                <div class="topic-number">01</div>
+                                <h5>Emotional Reactions & Community Engagement</h5>
+                                <p>Brief, affect-laden responses with expressive emojis and direct tagging of other users.</p>
+                            </div>
+                            <div class="topic-card">
+                                <div class="topic-number">02</div>
+                                <h5>Resonance and Feeling Seen</h5>
+                                <p>Strong sense of personal resonance: "Me!!!", "I feel attacked", "I feel so seen".</p>
+                            </div>
+                            <div class="topic-card">
+                                <div class="topic-number">03</div>
+                                <h5>Sharing Personal Experiences</h5>
+                                <p>Detailed self-disclosure about daily life with ADHD: routines, cognitive patterns, social interactions.</p>
+                            </div>
+                            <div class="topic-card">
+                                <div class="topic-number">04</div>
+                                <h5>Self-Diagnosis Through Memes</h5>
+                                <p>Comments reflecting on whether they might have ADHD: "Do I have ADHD??"</p>
+                            </div>
+                            <div class="topic-card">
+                                <div class="topic-number">05</div>
+                                <h5>Overlap with Other ND Conditions</h5>
+                                <p>Connections between ADHD and other conditions, particularly autism.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Section -->
+    <section class="section section-alt" id="discussion">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discussion</span>
+                <h2 class="section-title">Key Insights</h2>
+            </div>
+
+            <div class="discussion-grid">
+                <div class="discussion-card">
+                    <div class="discussion-icon">🤝</div>
+                    <h3>Memes as Validation Space</h3>
+                    <p>ADHD memes function as lighthearted spaces for validation and empathy within online ADHD communities. They help reduce stigma by building more accurate and nuanced public understandings.</p>
+                </div>
+                <div class="discussion-card">
+                    <div class="discussion-icon">⚠️</div>
+                    <h3>Tensions with Misinformation</h3>
+                    <p>While raising awareness, exaggerated or oversimplified portrayals can lead to misinformation and potentially contribute to overdiagnosis or misdiagnosis due to over-endorsed self-report.</p>
+                </div>
+                <div class="discussion-card">
+                    <div class="discussion-icon">🔍</div>
+                    <h3>Expert Reflections</h3>
+                    <p>Clinical expert noted that while accurate, memes often involve oversimplification. The comorbidity rate may exceed 70%, making isolated trait depictions potentially misleading.</p>
+                </div>
+                <div class="discussion-card">
+                    <div class="discussion-icon">🏥</div>
+                    <h3>Systemic Challenges</h3>
+                    <p>Memes reflect structural issues in healthcare: long waiting lists, lack of insurance coverage, and the feeling that diagnosis is "a matter of magic" or "a privilege".</p>
+                </div>
+            </div>
+
+            <div class="expert-quote">
+                <blockquote>
+                    "Healthcare systems still prioritize 'visible disabilities, visible pain, and visible diseases', often underestimating mental health and neurodivergence—a reality ADHD memes bring humorously yet critically into view."
+                </blockquote>
+                <cite>— Clinical Expert Reflection</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implications Section -->
+    <section class="section" id="implications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Implications</span>
+                <h2 class="section-title">Design Implications</h2>
+            </div>
+
+            <div class="implications-list">
+                <div class="implication-item">
+                    <div class="implication-number">01</div>
+                    <div class="implication-content">
+                        <h3>Low-barrier Expressive Tools</h3>
+                        <p>Design informal, humorous formats similar to memes to make expression feel more approachable. Incorporate meme-like formats into co-design activities to lower linguistic and social barriers.</p>
+                    </div>
+                </div>
+                <div class="implication-item">
+                    <div class="implication-number">02</div>
+                    <div class="implication-content">
+                        <h3>Affect-aware Features</h3>
+                        <p>Support lightweight mixed-affect reactions and optional visual mood markers, enabling users to signal layered feelings without being forced into a single positive or negative label.</p>
+                    </div>
+                </div>
+                <div class="implication-item">
+                    <div class="implication-number">03</div>
+                    <div class="implication-content">
+                        <h3>Inclusive Sense-making Tools</h3>
+                        <p>Support inclusive sense-making with lightweight community annotation or optional tags (e.g., self-identified, formally diagnosed, ally) that foreground content as personal experience.</p>
+                    </div>
+                </div>
+                <div class="implication-item">
+                    <div class="implication-number">04</div>
+                    <div class="implication-content">
+                        <h3>Contextual Enrichment</h3>
+                        <p>Offer non-intrusive contextual features that allow viewers to learn more about ADHD concepts beyond memes, such as links to vetted resources on assessment pathways.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="section section-alt" id="conclusion">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conclusion</span>
+                <h2 class="section-title">Contributions</h2>
+            </div>
+
+            <div class="conclusion-content">
+                <div class="contribution-card">
+                    <h3>Understanding ND Self-Expression</h3>
+                    <p>Demonstrated how memes function as an interactional mechanism for neurodivergent storytelling and identity formation, centering ADHD people's lived experience.</p>
+                </div>
+                <div class="contribution-card">
+                    <h3>Digital Mental Health Research</h3>
+                    <p>Contributed to digital mental health research by showing how memes facilitate self-expression, validation, and community-building while raising questions about misinformation.</p>
+                </div>
+                <div class="contribution-card">
+                    <h3>Design Directions</h3>
+                    <p>Informed design directions for social platforms: meme-inspired low-barrier expressive tools and contextual features that mitigate misinterpretation and misinformation.</p>
+                </div>
+            </div>
+
+            <div class="paper-info">
+                <div class="info-item">
+                    <span class="info-label">Conference</span>
+                    <span class="info-value">CHI '26: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">DOI</span>
+                    <a href="https://doi.org/10.1145/3772318.3790540" target="_blank">10.1145/3772318.3790540</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Keywords</span>
+                    <span class="info-value">ADHD, Meme, Online Health Communities, Social Media, Neurodivergence, Self-Expression, Community Engagement</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-citation">
+                    <h4>Citation</h4>
+                    <p>Zhang, F., Fu, J., Chen, K., & LC, R. (2026). Laughing Through the Struggles: Understanding ADHD Experience and Community Engagement Through Memes and Comments on Instagram. In <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</em>. ACM.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://doi.org/10.1145/3772318.3790540" target="_blank">DOI</a>
+                    <a href="https://chi2026.acm.org/" target="_blank">CHI '26</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Authors. This is an open-access paper distributed under CC-BY license.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Figure">
+                <iframe id="modalPdf" src="" style="display:none; width:100%; height:80vh;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#overview" onclick="closeMobileMenu()">Overview</a>
+            <a href="#methods" onclick="closeMobileMenu()">Methods</a>
+            <a href="#findings" onclick="closeMobileMenu()">Findings</a>
+            <a href="#discussion" onclick="closeMobileMenu()">Discussion</a>
+            <a href="#implications" onclick="closeMobileMenu()">Implications</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
